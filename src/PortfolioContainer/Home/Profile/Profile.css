@@ -1,0 +1,193 @@
+:root {
+  /* It's good practice to define the primary color if you haven't already */
+  --primary-color: #ff5823;
+  --white: aliceblue;
+  --dark-text: #111;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-image: url("../../../assets/Home/bg.png");
+}
+.profile-parent {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+/* -------------------------------------------------------------------------- */
+/* TEXT STYLING CHANGES */
+/* -------------------------------------------------------------------------- */
+.profile-details-name {
+  font-size: 24px;
+  font-family: "Poppins SemiBold";
+  color: white; /* 👈 CHANGE 3: Ensuring the entire name line is white */
+}
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+.profile-details-role h1 {
+  font-size: 45px;
+  font-family: "cursive";
+  line-height: 1.2;
+}
+.primary-text {
+  /* Assumed CSS variable definition. Keeping this for general text. */
+  color: var(--white);
+}
+.highlighted-text {
+  color: white; /* 👈 CHANGE 3: Changed from #ff5823 to white */
+}
+.profile-role-tagline {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins Light";
+}
+
+/* Social Icons */
+.colz .colz-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+  transition: all 0.3s ease;
+}
+.colz .colz-icon i:hover {
+  color: var(--primary-color);
+  transform: scale(1.5);
+}
+
+/* -------------------------------------------------------------------------- */
+/* BUTTON STYLING CHANGES (Consistent Shape/Size, Orange Default, White Hover) */
+/* -------------------------------------------------------------------------- */
+.profile-options {
+  margin-top: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 14px 40px;
+  cursor: pointer;
+  border-radius: 30px; /* Made shape consistent: slightly more rounded */
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+  margin: 0 10px; /* Ensured space between buttons */
+}
+
+/* Primary Button (Hire Me) - Orange Default, White Hover */
+.primary-btn {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--white);
+}
+.primary-btn:hover {
+  background-color: var(--white);
+  color: var(--dark-text); /* Text turns dark on white background */
+  border: 2px solid var(--white);
+}
+
+/* Highlighted Button (Get Resume) - Orange Default, White Hover */
+.highlighted-btn {
+  background-color: var(--primary-color); /* 👈 CHANGE 2: Set background to Orange */
+  border: 2px solid var(--primary-color); /* 👈 CHANGE 1: Set border to Orange */
+  color: var(--white);
+}
+.highlighted-btn:hover {
+  background-color: var(--white); /* 👈 CHANGE 2: Hover background to White */
+  color: var(--dark-text); /* Text turns dark on white background */
+  border: 2px solid var(--white);
+}
+
+
+/* Profile Picture Styling */
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  border-radius: 50%;
+  background-image: url("../../../assets/Home//me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .profile-picture {
+    margin: 0 0px 0 80px;
+  }
+  .profile-details-name {
+    font-size: 20px;
+  }
+  .profile-details-role .primary-text {
+    font: 12px;
+  }
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .profile-picture {
+    margin: 0 0 0 4px;
+    height: 320px;
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .proflie-details {
+    margin: 25px 0 0;
+  }
+  /* Remove specific highlighted-btn margin override for mobile consistency */
+  .profile-options .highlighted-btn {
+    margin: 0 !important;
+  }
+  .profile-details-name,
+  .profile-details-role {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .proflie-details {
+    width: 95%;
+  }
+}
