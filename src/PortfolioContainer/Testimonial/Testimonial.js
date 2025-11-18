@@ -26,7 +26,7 @@ const refereeData = [
     {
       name: "Charity Maina",
       title: "ICT Lead, 4G Capital Limited - Supervisor",
-      comment: "Highly recommend Nathan for his excellent ticket resolution and recognized achievements as an IT Operations assistant, including performance badges like Most Valuable Player, Wizard and Speed Racer.",
+      comment: "Highly recommend Nathan for his excellent ticket resolution and recognized achievements as an IT Operations intern, including performance badges like Most Valuable Player, Wizard and Speed Racer.",
       image: charity,
     },
     {

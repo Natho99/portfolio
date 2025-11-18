@@ -15,7 +15,7 @@ export default function AboutMe(props) {
   const SCREEN_CONSTSANTS = {
     // FIX: All citation tags are removed to resolve the SyntaxError.
     description:
-      "I am Nathan Kimutai, an energetic Computer Scientist with a strong foundation in math, logic, and cross-platform coding. I hold a Bachelor of Science in Mathematics & Computer Science (Second Class Honors) from Kenyatta University, along with certifications in Data Science and Cisco Certified Network Administrator 1 & 2.\n\n                                                                                 I am currently serving as an IT Operations Intern at Fourth Generation Capital Limited, where my work resolving technology issues earned me recognition as Most Valuable Player, Customer Wow Champion, and Wizard Speed Racer.",
+      "I am Nathan Kimutai, an energetic Computer Scientist with a strong foundation in math, logic, and cross-platform coding. I hold a Bachelor of Science in Mathematics & Computer Science (Second Class Honors) from Kenyatta University, along with certifications in Data Science and Cisco Certified Network Administrator 1 & 2.\n\n                                                                                 I am currently serving as an IT Operations assistant at Fourth Generation Capital Limited, where my work resolving technology issues earned me recognition as Most Valuable Player, Customer Wow Champion, and Wizard Speed Racer.",
     highlights: {
       bullets: [
         "Full-stack development (React JS, Node JS, PostgreSQL, Django)",
