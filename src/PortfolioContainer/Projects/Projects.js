@@ -40,7 +40,7 @@ export default function Projects(props) {
     {
       title: "MaktabaMark (Desktop LMS)",
       description: "Developed MaktabaMark, a comprehensive desktop-based School Library Management System.",
-      link: "https://youtu.be/oXXyTHfScFM",
+      link: "https://youtu.be/mmA_5iPwfuc",
       image: imgD,
       isExternalLink: true,
     },
